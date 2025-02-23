@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "vamoscalcular_backend": {
+      "main": "src/vamoscalcular_backend/main.mo",
+      "type": "motoko"
+    },
+    "vamoscalcular_frontend": {
+      "dependencies": [
+        "vamoscalcular_backend"
+      ],
+      "source": [
+        "src/vamoscalcular_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "vamoscalcular_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
