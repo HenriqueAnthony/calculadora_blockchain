@@ -1,7 +1,8 @@
 {
   "canisters": {
     "vamoscalcular_backend": {
-      "main": "src/vamoscalcular_backend/main.mo",
+      "main": "src/vamoscalcular/calc.mo",
+      "candid": "src/vamoscalcular/calc.did",
       "type": "motoko"
     },
     "vamoscalcular_frontend": {
@@ -9,7 +10,7 @@
         "vamoscalcular_backend"
       ],
       "source": [
-        "src/vamoscalcular_frontend/dist"
+        "src/vamoscalcular_frontend"
       ],
       "type": "assets",
       "workspace": "vamoscalcular_frontend"
